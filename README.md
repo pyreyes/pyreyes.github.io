@@ -1,2 +1,1 @@
-# pyreyes.github.io
-personal website
+# Simple Demo (without project photos)
