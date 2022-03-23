@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Intelligent Emotion Detection</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <base href="/"> -->
+
+       
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- <script src="js/app.js"></script> -->
+    
+</head>
+
+<body>
+    <include src="Scratch_Model_and_SVM_Transfer.html"></include>
+
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                Intelligent Emotion Detection
+                <br><small>DS 5230 Unsupervised Machine Learning and Data Mining </small>
+            </h2>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p style="text-align:center;">
+                    <image src="img/fer2013_img.png" height="210px" >
+                </p>
+                <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+
+                        <li>
+                            <a href="Scratch_Model_and_SVM_Transfer.html">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+                <p>
+                    Emotion Detection has been an emerging area of study in the field of machine learning. With the rise in the application of facial recognition and image processing, emotion detection is also becoming increasingly important. When there is a human-machine interaction, emotion detection can provide personalized services depending on their mood and underlying emotions. Emotion recognition can also have a variety of applications in the fields of medical science, health monitoring, marketing and customer satisfaction, security and surveillance. Emotions are an essential part of human lives and it is also a very good indicator of health and communications. One other potential application could be in social media where most people upload facial images with various emotions.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Algorithm I: Clever Graph Sampling
+                </h3>
+                <p class="text-justify">
+                    The goal is to sample nodes and edges from an input graph to generate a smaller graph that retains the most connected components in the original graph. A connected component is a subgraph in which each pair of nodes is connected to each other via a path. 
+                    </p>
+                <p class="text-justify">
+                    This sampling method is based on random walks. We first select a small set of nodes as starting nodes and simulate random walks on the graph starting from those nodes. In every iteration, a small number of nodes that were already sampled are selected and added as new roots for additional random walks.
+                </p>
+                <image src="img/rdd-transform.png" height="500px">
+
+                <h4>
+                    Algorithm and Program Analysis
+                </h4>
+
+                <p lass="text-justify">
+                    There are two main parameters that can affect the program performance: root fraction and number of partitions. 
+                    <br>The root fraction is the percentage of graph nodes that are utilized as roots for the random walks. Below are the results of varying this parameter while keeping all others constant for obtaining a sample that has 40% of the edges of the original graph.
+
+                </p>
+
+    
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Design borrowed from <a href="https://jonbarron.info">John Barron's website</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+            </div>
+        </div>
+    </div>
+    <div w3-include-html="Scratch_Model_and_SVM_Transfer.html"></div> 
+        <script>
+        includeHTML();
+        </script>
+
+</body>
+</html>

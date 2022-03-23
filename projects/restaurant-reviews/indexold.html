@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Restaurant Reviews Analysis</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    
+</head>
+
+<body>
+    <include src="Scratch_Model_and_SVM_Transfer.html"></include>
+
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                Restaurant Reviews Analysis
+                <br><small>DS 5230 Unsupervised Machine Learning and Data Mining </small>
+            </h2>
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p style="text-align:center;">
+                    <image src="img/zomato.jpeg" height="210px" >
+                </p>
+                <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+
+                        <li>
+                            <a href="Scratch_Model_and_SVM_Transfer.html">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+                <p>
+                    This page contains a summary of the work I did as part of a group project during my Unsupervised Machine Learning and Data Mining class. This project focused on utilizing restaurant reviews to provide completitive intelligence and restaurant recommendations for stakeholders in existing or prospective new restaurants in Bangaluru, India. The dataset used consists of customer reviews of restaurants in the Bangalury area and can be found <a href="https://www.kaggle.com/shrutimehta/zomato-restaurants-data"> here</a>.</p>
+                <br>
+                <p>I created several topic models using the free-form text in the reviews. Topic models are probabilistic algorithms for discovering the main themes in a large and otherwise unstructured collection of documents. They can help cluster similar groups of documents according to the discovered themes in an unsupervised way. Many algorithms can be used for topic modeling, for this project we focused on Latent Dirichlet Allocation (LDA). LDA models each document in a corpus as a mixture of a fixed number of topics. A topic has a probability of generating various words taken from a dictionary comprised of all the words observed in the corpus. Intuitively, the LDA model tries to find groups of words that appear together frequently.
+
+Preprocessing of the data for input into the LDA model included tokenization and removing stop words, creation of bigrams, and lemmatization. Tokenization splits the text into sentences and the sentences into words. Bigrams allow us to capture two words frequently occurring together.
+
+
+                </p>
+            </div>
+        </div>
+
+
+               
+    
+        
+            
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+            </td>
+          </tr>
+        </tbody></table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
